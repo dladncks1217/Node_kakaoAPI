@@ -8,5 +8,11 @@
     "start": "nodemon"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "morgan": "^1.9.1"
+  }
 }

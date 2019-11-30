@@ -2,15 +2,15 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 
-const indexRouter = require('views',index);
+const indexRouter = require('./routes/index');
 
 const app = express();     
 
 require('dotenv').config();   // .env
 
-app.set('viewengine',ejs);       // 템플릿엔진 ejs
+app.set('viewengine','ejs');       // 템플릿엔진 ejs
 app.set('views',path.join(__dirname,'views'));   
-app.set(process.env.PORT||8004);
+app.set('port',process.env.PORT||8003);
 
 app.use(logger('dev'));
 app.use('/',express.static(path.join(__dirname,'public')));
@@ -18,11 +18,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 app.use('/',indexRouter);
-
-app.use('/',IndexRouter);
-app.use('/auth',authRouter);
-app.use('/post',postRouter);
-app.use('/user',UserRouter);
 
 app.use((req,res,next)=>{
     const err = new Error('NOT FOUND');

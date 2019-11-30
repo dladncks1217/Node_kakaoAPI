@@ -8,13 +8,13 @@
 	<div id="map" style="width:500px;height:400px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a30c68d40f611b68ea8e39a3e7a3d698"></script>
 	<script>
-		var container = document.getElementById('map');
-		var options = {
+		const container = document.getElementById('map');
+		let options = {
 			center: new kakao.maps.LatLng(33.450701, 126.570667),
 			level: 3
 		};
 
-		var map = new kakao.maps.Map(container, options);
+		let map = new kakao.maps.Map(container, options);
 	</script>
 </body>
 </html>

@@ -8,8 +8,8 @@ const app = express();
 
 require('dotenv').config();   // .env
 
-app.set('viewengine','ejs');       // 템플릿엔진 ejs
 app.set('views',path.join(__dirname,'views'));   
+app.set('view engine','ejs');       // 템플릿엔진 ejs
 app.set('port',process.env.PORT||8003);
 
 app.use(logger('dev'));

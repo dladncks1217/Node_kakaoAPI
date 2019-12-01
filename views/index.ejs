@@ -6,13 +6,13 @@
 	<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-	<form action="" >
+
 		<select name="" id="location">
-				<option value="서울">서울</option>
-				<option value="인천">인천</option>
-				<option value="부산">부산</option>
-			</select>
-	</form>
+			<option value="서울">서울</option>
+			<option value="인천">인천</option>
+			<option value="부산">부산</option>
+		</select>
+		<button id="find">찾기</button>
 	
 	<br>
 	<div id="map" style="width:500px;height:400px;"></div>
@@ -26,5 +26,6 @@
 
 		let map = new kakao.maps.Map(container, options);
 	</script>
+	<script src="./javascript/index.js"></script>
 </body>
 </html>

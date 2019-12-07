@@ -3,7 +3,8 @@ const path = require('path');
 const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
-
+const {sequelize} = require('./models');
+sequelize.sync();
 const app = express();     
 
 require('dotenv').config();   // .env

@@ -11,3 +11,10 @@
     font-size:20px;
     border-radius:5px;
 }
+.logindiv{
+    height:50px;
+    border:3px black;
+}
+input{
+    display: block;
+}

@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-		<button>로그인</button>
 		<select name="" id="location">
 			<option value="서울">서울</option>
 			<option value="인천">인천</option>
@@ -15,7 +14,10 @@
 		<button id="find">찾기</button>
 	
 	<br>
-	<div id="map" style="width:500px;height:400px;"></div>
+	<div id="map" style="width:500px;height:400px;"></div> <br>	
+	<button id="join">가입</button>
+	<button id="login">로그인</button>
+	<div id="div"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a30c68d40f611b68ea8e39a3e7a3d698"></script>
 	<script>
 		const container = document.getElementById('map');
@@ -27,5 +29,6 @@
 		let map = new kakao.maps.Map(container, options);
 	</script>
 	<script src="./javascript/index.js"></script>
+	<script src = "./javascript/login.js"></script>
 </body>
 </html>
